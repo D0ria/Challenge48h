@@ -7,14 +7,28 @@ body {
     background-color: #E9DFF6;
 }
 
+/*connexion*/
+.conn_div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.login {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
 /*titre et image*/
 .title_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -78,8 +92,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .choose_title {
@@ -94,9 +108,26 @@ body {
     padding-right: 10px;
 }
 
+.radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 100px;
+}
 
+label {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
 
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
 
+/*map*/
 
 
 
@@ -105,6 +136,10 @@ body {
 
 
 @media screen and (max-width: 768px) {
+    .login {
+        font-size: 1.5em;
+    }
+
     .title {
         font-size: 3em;
     }
@@ -121,16 +156,23 @@ body {
     .devise_text {
         margin-right: 0;
         margin-left: 0;
+        font-size: 1.5em;
     }
 
     .devise_text2 {
         margin-right: 0;
         margin-left: 0;
+        font-size: 1.5em;
     }
 
     .devise_text3 {
         margin-right: 0;
         margin-left: 0;
+        font-size: 1.5em;
+    }
+
+    .choose_title {
+        font-size: 1.5em;
     }
 }
     
