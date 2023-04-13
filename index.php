@@ -1,17 +1,20 @@
 <?php
-use restaurant\products;
-$serveur = $_SERVER['REQUEST_URI'];
-switch($serveur){
-    case '/':
-        require __DIR__ ."/Accueil.html";
-        $allproduct = new products();
-        $allproduct->affichage_produit();
-        break;
-    case '/commentaire':
-        require __DIR__ . "/commentaire.html";
 
-        break;
-    default:
-        echo "Error 404";
+include "getRacine.php";
+include "$racine/controleur/controleurPrincipal.php";
+// include_once "$racine/modele/auth.inc.php"; // pour pouvoir utiliser isLoggedOn()
+
+
+
+if (isset($_GET["action"])){
+    $action = $_GET["action"];
 }
+else{
+    
+    $action = "defaut";
+}
+
+$fichier = controleurPrincipal($action);
+include "$racine/controleur/$fichier";
+
 ?>
