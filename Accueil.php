@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,9 @@
 </head>
 
 <body>
+    <div class="conn_div">
+        <a href="/Login.php" class="login">Connexion</a>
+    </div>
     <div class="title_div">
         <h1 class="title">YnoResto</h1>
         <div class="image_devise">
@@ -31,8 +35,32 @@
         <div class="choose_title">
             <p>Choisis ton campus</p>
         </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="campus" value="jeanmace">
+                Jean Mace
+            </label>
+            <label>
+                <input type="radio" name="campus" value="perrache">
+                Perrache
+            </label>
+            <label>
+                <input type="radio" name="campus" value="villeurbane">
+                Villeurbane
+            </label>
+        </div>
+    </div>
+
+    <div class="map">
+        <div class="map_left">
+
+        </div>
+        <div class="map_right">
+
+        </div>
 
     </div>
-    
+
 </body>
+
 </html>
