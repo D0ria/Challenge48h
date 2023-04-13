@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Accueil.css">
+    <title>YnoResto</title>
+</head>
+
+<body>
+    <div class="conn_div">
+        <a href="/Login.php" class="login">Connexion</a>
+    </div>
     <div class="title_div">
         <h1 class="title">YnoResto</h1>
         <div class="image_devise">
@@ -46,20 +61,6 @@
 
     </div>
 
-    <div>
-        <?php foreach ($listeRestau as $key => $value) : ?>
-            <div class="vignette">
-                <fieldset>
-                    <?= $value['Nom'] ?> | <?= $value['Adresse'] ?><br>
-                    <?= $value['Type'] ?> | <?= $value['Notemoyenne'] ?><br>
-                    <?= $value['Prixmoyen'] ?> €
-                </fieldset>
-            </div>
-        <?php endforeach ?>
-    </div>
+</body>
 
-    <a href="./?action=InsertCommentaire">Commenter</a>
-
-    </body>
-
-    </html>
+</html>
