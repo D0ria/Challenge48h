@@ -1,3 +1,5 @@
+<?php include_once "$racine/modele/bd.admin.inc.php"; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,20 +17,24 @@
             <p>Connexion</p>
         </div>
         <div class="form_div">
-            <form class="form" action="#" method="post">
+        <?php if (!isLoggedOn()){ ?>
+            <form class="form" action="./?action=login" method="post">
                 <div class="input">
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="">
+                    <label for="email">Email</label>
+                    <input type="text" name="mail" id="nom" placeholder="Email">
                 </div>
                 <div class="separation"></div>
                 <div class="input">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password" placeholder="">
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" name="mdp" id="password" placeholder="Mot de passe">
                 </div>
                 <div class="input">
                     <input class="button" type="submit" value="Se connecter">
                 </div>
             </form>
+            <?php
+            } else {
+                echo "Vous êtes déjà connecté !"; } ?>
         </div>
 
     </div>
