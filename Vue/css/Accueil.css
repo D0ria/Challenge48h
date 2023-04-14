@@ -1,7 +1,7 @@
 @font-face {
     font-family: "brice-regular";
     src: url("../../assets/BriceRegularExpanded.otf");
-  }
+}
 
 body {
     background-color: #E9DFF6;
@@ -71,7 +71,7 @@ body {
     margin-bottom: 20px;
     margin-right: 20%;
     margin-left: -20%;
-    
+
 }
 
 .devise_text3 {
@@ -125,7 +125,7 @@ label {
 input[type="radio"] {
     width: 20px;
     height: 20px;
-  }
+}
 
 /*map*/
 
@@ -175,4 +175,3 @@ input[type="radio"] {
         font-size: 1.5em;
     }
 }
-    
