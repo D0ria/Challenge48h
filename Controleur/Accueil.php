@@ -1,6 +1,6 @@
 <?php
-if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
-    $racine="..";
+if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
+    $racine = "..";
 }
 // else{include "./getRacine.php";}
 
@@ -19,7 +19,3 @@ $listeRestau = getEtablissement();
 include "$racine/vue/entete.php";
 include "$racine/vue/Accueil.php";
 include "$racine/vue/pied.php";
-
-
-
-?>

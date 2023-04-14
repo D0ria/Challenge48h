@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Login.css">
+    <link rel="stylesheet" type="text/css" href="../Vue/css/Login.css">
     <title>YnoResto</title>
 </head>
 
@@ -15,18 +15,18 @@
             <p>Connexion</p>
         </div>
         <div class="form_div">
-            <form class="form" action="Accueil.php" method="post">
+            <form class="form" action="#" method="post">
                 <div class="input">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="nom" id="nom" placeholder="">
                 </div>
                 <div class="separation"></div>
                 <div class="input">
                     <label for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    <input type="password" name="password" id="password" placeholder="">
                 </div>
                 <div class="input">
-                    <input type="submit" value="Se connecter">
+                    <input class="button" type="submit" value="Se connecter">
                 </div>
             </form>
         </div>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "brice-regular";
-    src: url("assets/BriceRegularExpanded.otf");
+    src: url("../../assets/BriceRegularExpanded.otf");
   }
 
 body {
@@ -8,10 +8,10 @@ body {
 }
 
 /*connexion*/
-.conn_div {
+.login_div {
     margin-top: 20px;
     display: flex;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
 
 .login {
