@@ -2,11 +2,11 @@
 
 include_once "bd.inc.php";
 
-function getEtablissementById($id) {
+function getDetailEtablissement($id) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from modele where idmodele=:id");
+        $req = $cnx->prepare("select * from etablissement where id=:id");
         $req->bindValue(':id', $id, PDO::PARAM_INT);
 
         $req->execute();

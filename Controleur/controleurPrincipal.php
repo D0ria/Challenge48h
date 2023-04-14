@@ -4,6 +4,7 @@ function controleurPrincipal($action) {
     $lesActions = array();
     $lesActions["defaut"] = "Accueil.php";
     $lesActions['InsertCommentaire'] = "InsertCommentaire.php";
+    $lesActions['detailEtablissement'] = "DetailEtablissement.php";
 
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];

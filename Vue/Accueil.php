@@ -29,13 +29,11 @@
             <fieldset>
                 <?= $value['Nom'] ?> | <?= $value['Adresse'] ?><br>
                 <?=  $value['Type'] ?> | <?=  $value['Notemoyenne'] ?><br>
-                <?=  $value['Prixmoyen'] ?>  € 
+                <?=  $value['Prixmoyen'] ?>  € <br>
+                <a href="./?action=detailEtablissement" + $key>Détails</a>
             </fieldset>
             </div>
         <?php endforeach ?>
     </div>
 
     <a href="./?action=InsertCommentaire">Commenter</a>
-
-</body>
-</html>
