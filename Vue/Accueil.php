@@ -58,13 +58,20 @@
     <div id=etablissement>
         <?php foreach ($listeRestau as $key => $value) : ?>
             <div class="vignette">
-                <?= $value['Nom'] ?> | <?= $value['Adresse'] ?><br>
-                <?=  $value['Type'] ?> | <?=  $value['Notemoyenne'] ?><br>
-                <?=  $value['Prixmoyen'] ?>  € <br>
-                <form method="post" action="./?action=detailEtablissement">
-                    <input type="hidden" name="id" value="<?= $value['Id'] ?>">
-                    <input type="submit" value="Voir Detail">
-                </form>
+                <div class="vignette_div">
+                    <span class="vignette_title"><?= $value['Nom'] ?></span><br>
+                    <?= $value['Adresse'] ?><br>
+                    <?= $value['Type'] ?><br>
+                    <?= $value['Notemoyenne'] ?><br>
+                    <?= $value['Prixmoyen'] ?> € <br>
+                </div>
+                <div class="vignette_form">
+                    <form method="post" action="./?action=detailEtablissement">
+                        <input type="hidden" name="id" value="<?= $value['Id'] ?>">
+                        <input class="detail" type="submit" value="Voir Detail">
+                    </form>
+                </div>
+
             </div>
         <?php endforeach ?>
     </div>
