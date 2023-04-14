@@ -1,24 +1,17 @@
 @font-face {
     font-family: "brice-regular";
     src: url("../../assets/BriceRegularExpanded.otf");
-  }
+}
 
 body {
     background-color: #E9DFF6;
 }
 
 /*connexion*/
-<<<<<<< HEAD:Vue/css/Accueil.css
 .login_div {
     margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
-=======
-.conn_div {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row-reverse
->>>>>>> 1a79aa9e64c3f6cdec1458d07a17582ff0a3065e:Accueil.css
 }
 
 .login {
@@ -78,7 +71,7 @@ body {
     margin-bottom: 20px;
     margin-right: 20%;
     margin-left: -20%;
-    
+
 }
 
 .devise_text3 {
@@ -132,7 +125,7 @@ label {
 input[type="radio"] {
     width: 20px;
     height: 20px;
-  }
+}
 
 /*map*/
 
@@ -182,4 +175,3 @@ input[type="radio"] {
         font-size: 1.5em;
     }
 }
-    
