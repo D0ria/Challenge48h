@@ -1,0 +1,29 @@
+.vignette{
+    font-family: 'brice-regular', sans-serif;
+    font-size: 2em;
+    border: 2px solid black;
+    background-color: #FDE962;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15vh;
+}
+
+.nom{
+    margin: 0 100px;
+    width: 80vh;
+}
+
