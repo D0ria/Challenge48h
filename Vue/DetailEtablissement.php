@@ -34,8 +34,6 @@
             </div>
         </div>
 
-    </div>
-
     <div class="commentaire">
         <h1>Commentaire</h1>
     </div>
