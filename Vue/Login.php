@@ -1,4 +1,4 @@
-<?php include_once "$racine/modele/bd.admin.inc.php"; ?>
+<?php include_once "$racine/modele/bd.admin.inc.php"; logout() ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,12 +21,12 @@
             <form class="form" action="./?action=login" method="post">
                 <div class="input">
                     <label for="email">Email</label>
-                    <input type="text" name="mail" id="nom" placeholder="Email">
+                    <input type="text" name="mail" id="nom" placeholder="Email" required>
                 </div>
                 <div class="separation"></div>
                 <div class="input">
                     <label for="mdp">Mot de passe</label>
-                    <input type="password" name="mdp" id="password" placeholder="Mot de passe">
+                    <input type="password" name="mdp" id="password" placeholder="Mot de passe" required>
                 </div>
                 <div class="input">
                     <input class="button" type="submit" value="Se connecter">

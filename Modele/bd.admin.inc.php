@@ -56,7 +56,10 @@ function login($mail, $mdp)
 
     $util = getUtilisateurByMail($mail);
 
-    $mdpBD = $util["Mdp"];
+    if(isset($util["Mdp"]))
+        $mdpBD = $util["Mdp"];
+    else
+        $mdpBD = null;
 
     // if (trim($mdpBD) == trim(crypt($mdp, $mdpBD))) 
     if (trim($mdpBD) == trim($mdp))
