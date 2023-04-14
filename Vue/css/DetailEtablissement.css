@@ -1,4 +1,26 @@
-.cadre{
+.retour {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.retour a {
+    text-decoration: none;
+    color: black;
+}
+
+.titre {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.cadre {
     font-family: 'brice-regular', sans-serif;
     font-size: 2em;
     border: 2px solid black;
@@ -9,24 +31,27 @@
     justify-content: space-around;
 }
 
-.left{
+.cadre_div {
     display: flex;
+    flex-direction: row;
 }
 
-.right{
+.left {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto-regular', sans-serif;
+    padding: 30px;
 }
 
-.nom{
+.left p {
+    margin: 0;
+}
+
+.nom {
     margin: 0 100px;
     width: 80vh;
-}
-
-.envoiform{
-    margin-top: 5%;
-    text-align: center;
 }
 
 .submit {
@@ -42,7 +67,82 @@
     color: black;
 }
 
-.taille{
+.taille {
     display: flex;
     justify-content: center;
+}
+
+.envoiform {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    color: #333;
+    background-color: #C9A1EF;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+}
+
+.commentaire {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .retour {
+        margin-left: 0;
+    }
+
+    .cadre {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .cadre_div {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-top: 20px;
+    }
+
+    .nom {
+        margin: 0;
+    }
+
+    .submit {
+        margin-top: 20px;
+    }
+
+    .envoiform {
+        width: 100%;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
 }
