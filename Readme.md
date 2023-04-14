@@ -2,7 +2,7 @@
   
 Bienvenue dans le projet de création du site Ynoresto en utilisant les langage HTML,CSS,PHP,JS
 
-Ce projet est fait dans le context du Challenge 48h, il consistait a faire un site web répertoriant les restaurants dans le environs des campus d'Ynov.
+Ce projet est fait dans le contexte du Challenge 48h, il consistait a faire un site web répertoriant les restaurants dans les environs des campus d'Ynov.
 
 ## 🛠️ Install Dependencies    
 
