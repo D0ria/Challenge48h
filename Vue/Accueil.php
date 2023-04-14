@@ -1,10 +1,10 @@
     <div class="login_div">
-        <a href="/Vue/Login.php" class="login">Connexion</a>
+        <a href="./?action=login" class="login">Connexion</a>
     </div>
     <div class="title_div">
         <h1 class="title">YnoResto</h1>
         <div class="image_devise">
-            <img class="image" src="../assets/image.png" alt="image de fond">
+            <img class="image" src="assets/image.png" alt="image de fond">
             <div class="devise">
                 <div class="devise_text">
                     <p>Trouve</p>

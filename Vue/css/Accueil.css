@@ -8,17 +8,10 @@ body {
 }
 
 /*connexion*/
-<<<<<<< HEAD:Vue/css/Accueil.css
 .login_div {
     margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
-=======
-.conn_div {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row-reverse
->>>>>>> 1a79aa9e64c3f6cdec1458d07a17582ff0a3065e:Accueil.css
 }
 
 .login {
