@@ -41,12 +41,10 @@
     <?php if($commentaire != "Aucun commentaire pour l'instant"){
         foreach ($commentaire as $key => $value) : ?>
             <div class="vignette">
-                <fieldset>
                     <?= $value['Nom'] ?> <br>
                     <?=  $value['Commentaire'] ?> <br>
                     <?=  $value['Prix'] ?>  € <br>
                     <?=  $value['Note'] ?>  € <br>
-                </fieldset>
             </div>
         <?php endforeach; 
         } 
