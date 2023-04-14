@@ -36,10 +36,11 @@
     <input type="text" name="Nom" required><br>
     <label>Commentaire:</label>
     <input type="text" name="Commentaire" required><br>
-    <label>Prix:</label>
-    <input type="text" name="Prix" required>€<br>
+    <label for=Prix>Prix:<span>Veuillez mettre un nombre</span></label>
+    <input type="number" name="Prix"   required >€<br>
+    
     <label>Note:</label>
-    <input type="text" name="Note" required>/5<br>
+    <input type="range" step="0.5" name="Note" min="0" max="5" required>/5<br>
     <input type="hidden" name="id" value="<?= $id ?>">
     <input type="submit" value="Envoie">
 </form>
