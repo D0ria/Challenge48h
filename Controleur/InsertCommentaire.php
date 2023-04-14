@@ -17,9 +17,9 @@ if (isset($_POST['Nom'])){
 
 // appel du script de vue qui permet de gerer l'affichage des donnees
 $titre = "Ajout Commentaire";
-include "$racine/vue/entete.php";
-include "$racine/vue/InsertCommentaire.php";
-include "$racine/vue/pied.php";
+include "$racine/Vue/entete.php";
+include "$racine/Vue/InsertCommentaire.php";
+include "$racine/Vue/pied.php";
 
 
 ?>

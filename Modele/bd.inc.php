@@ -1,5 +1,7 @@
 <?php
 
+include_once "bd.inc.php";
+
 function connexionPDO() {
     $login = "root";
     $mdp = "";
