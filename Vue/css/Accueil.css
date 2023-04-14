@@ -29,8 +29,21 @@ body {
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
+    
 }
+#etablissement{
+    columns: 4;
+}
+.vignette{
+    width: 20vw;
+    height: 18vh;
+    background-color: #fde962;
+    border: 2px solid black;
+    display: flex;
 
+    align-items: center;
+    
+}
 .title {
     font-family: 'brice-regular', sans-serif;
     font-size: 6em;
