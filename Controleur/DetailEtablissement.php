@@ -9,7 +9,6 @@ include_once "$racine/modele/bd.commentaire.inc.php";
 
 // recuperation des donnees GET, POST, et SESSION
 $id = $_POST['id'];
-
 if (isset($_POST['Nom'])){
     $Nom = $_POST["Nom"];
     $Commentaire = $_POST["Commentaire"];

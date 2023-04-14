@@ -32,7 +32,7 @@
     <label>Prix:</label>
     <input type="text" name="Prix" required>€<br>
     <label>Note:</label>
-    <input type="number" name="Note" min="0" max="5" required>/5<br>
+    <input type="range" step="0.5" name="Note" min="0" max="5" required>/5<br>
     <input type="hidden" name="id" value="<?= $id ?>">
     <div class = "taille"><input type="submit" value="Envoie" class="submit"></div>
 </form>
@@ -55,5 +55,5 @@
         } ?>
 </div>
 
-</body>
-</html>
+
+
