@@ -29,21 +29,9 @@ body {
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
-    
-}
-#etablissement{
-    columns: 4;
-}
-.vignette{
-    width: 20vw;
-    height: 18vh;
-    background-color: #fde962;
-    border: 2px solid black;
-    display: flex;
 
-    align-items: center;
-    
 }
+
 .title {
     font-family: 'brice-regular', sans-serif;
     font-size: 6em;
@@ -149,8 +137,44 @@ input[type="radio"] {
 
 }
 
+/*etablissements*/
+#etablissement {
+    columns: 4;
 
+}
 
+.vignette {
+
+    background-color: #fde962;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vignette_div {
+    margin-left: 10px;
+}
+
+.vignette_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vignette_title {
+    font-family: fantasy;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.detail {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-right: 10px;
+
+}
 
 
 
@@ -192,5 +216,28 @@ input[type="radio"] {
 
     .choose_title {
         font-size: 1.5em;
+    }
+
+    #etablissement {
+        columns: 2;
+    }
+
+    .vignette {
+        width: 40vw;
+        height: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .vignette_title {
+        font-family: fantasy;
+        font-size: 1em;
+    }
+
+    .vignette_div {
+        font-size: 0.8em;
     }
 }
