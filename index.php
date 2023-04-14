@@ -10,4 +10,4 @@ if (isset($_GET['action'])) {
 }
 
 $fichier = controleurPrincipal($action);
-include "$racine/controlleur/$fichier";
+include "$racine/controleur/$fichier";
