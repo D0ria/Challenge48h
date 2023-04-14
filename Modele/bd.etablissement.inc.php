@@ -6,7 +6,7 @@ function getDetailEtablissement($id) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from etablissement where id=:id");
+        $req = $cnx->prepare("select * from etablissement where Id=:id");
         $req->bindValue(':id', $id, PDO::PARAM_INT);
 
         $req->execute();
@@ -24,7 +24,7 @@ function getEtablissement() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select Nom, Adresse, Type, Notemoyenne, Prixmoyen from etablissement;");
+        $req = $cnx->prepare("select Id, Nom, Adresse, Type, Notemoyenne, Prixmoyen from etablissement;");
         $req->execute();
 
         while ($ligne = $req->fetch(PDO::FETCH_ASSOC)) {

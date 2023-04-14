@@ -56,7 +56,10 @@
                 <?= $value['Nom'] ?> | <?= $value['Adresse'] ?><br>
                 <?=  $value['Type'] ?> | <?=  $value['Notemoyenne'] ?><br>
                 <?=  $value['Prixmoyen'] ?>  € <br>
-                <a href="./?action=detailEtablissement" + $key>Détails</a>
+                <form method="post" action="./?action=detailEtablissement">
+                    <input type="hidden" name="id" value="<?= $value['Id'] ?>">
+                    <input type="submit" value="Voir Detail">
+                </form>
             </fieldset>
             </div>
         <?php endforeach ?>
