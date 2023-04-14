@@ -16,7 +16,9 @@ Afin d'exécuter le programe il vous faudra :
 
      
 
-## 🧐 Fonctionnalités    
+## 🧐 Fonctionnalités 
+
+Le site répertorie les restaurants dans les environs des campus d'Ynov, on peut commenter et noter la qualité des services et du prix des produits 
 
 
 
