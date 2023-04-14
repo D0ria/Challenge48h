@@ -1,4 +1,5 @@
-<?php include_once "$racine/modele/bd.admin.inc.php"; logout() ?>
+<?php include_once "$racine/modele/bd.admin.inc.php";
+logout() ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,29 +13,35 @@
 </head>
 
 <body>
+    <div class="retour">
+        <a href="./?action=defaut">
+            <p>retour</p>
+        </a>
+    </div>
     <div class="login_div">
         <div class="connexion">
             <p>Connexion</p>
         </div>
         <div class="form_div">
-        <?php if (!isLoggedOn()){ ?>
-            <form class="form" action="./?action=login" method="post">
-                <div class="input">
-                    <label for="email">Email</label>
-                    <input type="text" name="mail" id="nom" placeholder="Email" required>
-                </div>
-                <div class="separation"></div>
-                <div class="input">
-                    <label for="mdp">Mot de passe</label>
-                    <input type="password" name="mdp" id="password" placeholder="Mot de passe" required>
-                </div>
-                <div class="input">
-                    <input class="button" type="submit" value="Se connecter">
-                </div>
-            </form>
+            <?php if (!isLoggedOn()) { ?>
+                <form class="form" action="./?action=login" method="post">
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="text" name="mail" id="nom" placeholder="Email" required>
+                    </div>
+                    <div class="separation"></div>
+                    <div class="input">
+                        <label for="mdp">Mot de passe</label>
+                        <input type="password" name="mdp" id="password" placeholder="Mot de passe" required>
+                    </div>
+                    <div class="input">
+                        <input class="button" type="submit" value="Se connecter">
+                    </div>
+                </form>
             <?php
             } else {
-                echo "Vous êtes déjà connecté !"; } ?>
+                echo "Vous êtes déjà connecté !";
+            } ?>
         </div>
 
     </div>
