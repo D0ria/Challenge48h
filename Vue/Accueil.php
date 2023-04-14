@@ -69,7 +69,6 @@
         <?php endforeach ?>
     </div>
 
-    <a href="./?action=InsertCommentaire">Commenter</a>
 
     </body>
 
