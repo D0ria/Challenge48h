@@ -8,6 +8,20 @@ body {
     background-color: #C9A1EF;
 }
 
+.retour {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.retour a {
+    text-decoration: none;
+    color: black;
+}
+
 .connexion {
     font-family: 'brice-regular', sans-serif;
     font-size: 3em;
