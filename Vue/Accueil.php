@@ -25,28 +25,34 @@
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="campus" value="jeanmace">
+                <input type="radio" name="campus" value="jeanmace" onclick="showDiv('option1')">
                 Jean Mace
             </label>
             <label>
-                <input type="radio" name="campus" value="perrache">
+                <input type="radio" name="campus" value="perrache" onclick="showDiv('option2')">
                 Perrache
             </label>
             <label>
-                <input type="radio" name="campus" value="villeurbane">
+                <input type="radio" name="campus" value="villeurbane" onclick="showDiv('option3')">
                 Villeurbane
             </label>
         </div>
     </div>
 
     <div class="map">
-        <div class="map_left">
+        <div id="option1" style="display:none">
+            <iframe width="100%" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/jean-mace_899436?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+            <p class="fullscreen"><a href="//umap.openstreetmap.fr/fr/map/jean-mace_899436">Voir en plein ecran</a></p>
+        </div>
+        <div id="option2" style="display:none">
+            <iframe width="100%" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/nouveau-campus_899565?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+            <p class="fullscreen"><a href="//umap.openstreetmap.fr/fr/map/nouveau-campus_899565">Voir en plein ecran</a></p>
 
         </div>
-        <div class="map_right">
-
+        <div id="option3" style="display:none">
+            <iframe width="100%" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/campus-impulse-villeurbane_899509?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+            <p class="fullscreen"><a href="//umap.openstreetmap.fr/fr/map/campus-impulse-villeurbane_899509">Voir en plein ecran</a></p>
         </div>
-
     </div>
 
     <div id=etablissement>
@@ -62,3 +68,21 @@
             </div>
         <?php endforeach ?>
     </div>
+
+    <a href="./?action=InsertCommentaire">Commenter</a>
+
+    </body>
+
+    </html>
+
+    <script>
+        function showDiv(divId) {
+            // Masquer toutes les div
+            document.getElementById('option1').style.display = 'none';
+            document.getElementById('option2').style.display = 'none';
+            document.getElementById('option3').style.display = 'none';
+
+            // Afficher la div correspondante
+            document.getElementById(divId).style.display = 'block';
+        }
+    </script>

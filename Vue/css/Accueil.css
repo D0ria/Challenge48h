@@ -141,7 +141,13 @@ input[type="radio"] {
 }
 
 /*map*/
+.fullscreen a {
+    font-family: 'brice-regular', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
 
+}
 
 
 
